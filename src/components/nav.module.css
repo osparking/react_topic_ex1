@@ -1,0 +1,15 @@
+.linkContainer {
+  display: flex;
+}
+
+.linkContainer .link {
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkContainer .link:hover {
+  color: deeppink;
+  text-decoration: underline;
+  cursor: pointer;
+}

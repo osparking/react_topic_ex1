@@ -1,0 +1,20 @@
+.counter {
+  text-align: center;
+}
+.containerButtons {
+  align-items: center;
+}
+
+.containerButtons button {
+  width: 80px;
+  margin: 0 auto;
+  flex-shrink: 1;
+  align-items: center;
+}
+
+.deltaContainer {
+  margin-bottom: 20px;
+}
+.deltaInput {
+  width: 150px;
+}

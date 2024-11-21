@@ -1,0 +1,31 @@
+.bankAppContainer {
+  margin: 0 50px;
+}
+
+.balanceContainer {
+  /* font-weight: bold; */
+  font-size: 1.2em;
+  color: rgb(6, 71, 71);
+  font-family: HY견고딕, monospace, serif;
+}
+
+.amountContainer {
+  font-size: 1.2em;
+  color: darkblue;
+  font-family: HY견고딕, monospace, serif;
+}
+
+.amountInput {
+  font-size: 1em;
+  color: deeppink;
+  font-family: HY견고딕, monospace, serif;
+}
+
+.buttonsContainer {
+  margin-top: 25px;
+}
+
+.buttonsContainer button {
+  font-family: "맑은 고딕", monospace, serif;
+  font-size: 1em;
+}
