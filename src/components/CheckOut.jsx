@@ -5,7 +5,7 @@ export default function CheckOut() {
   const { userid } = useContext(UserContext);
   return (
     <div>
-      <p>'{userid}'첵크아웃</p>
+      <p>현 유저 아이디 : {userid}</p>
     </div>
   );
 }
