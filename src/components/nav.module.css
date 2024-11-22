@@ -1,5 +1,6 @@
 .linkContainer {
   display: flex;
+  font-weight: bold;;
 }
 
 .linkContainer .link {

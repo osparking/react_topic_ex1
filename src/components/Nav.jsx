@@ -16,12 +16,14 @@ export default function Nav() {
         <Link className={styles.link} to="/dashboard">
           대시보드
         </Link>
+        [&nbsp;
         <Link className={styles.link} to="/dashboard/settings">
-          [설정 - 
+          설정 -
         </Link>
         <Link className={styles.link} to="/dashboard/profile">
-          프로필]
+          프로필
         </Link>
+        ]
       </div>
     </Flex>
   );
