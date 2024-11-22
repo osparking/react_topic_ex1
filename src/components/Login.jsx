@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserProvider";
-export default function Login() {
-  const { userid, setUserid } = useContext(UserContext);
-  const [tempid, setTempid] = useState("");
 
+export default function Login() {
+  const { state, dispatch } = useContext(UserContext);
+  const [tempid, setTempid] = useState("");
   function handleLogin(e) {
     e.preventDefault();
-    setUserid(tempid);
+    dispatch({ type: "LOGIN", payload: tempid });
     setTempid("");
   }
   return (

@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { UserContext } from "../context/UserProvider";
 
 export default function Logout() {
-  const { setUserid } = React.useContext(UserContext);
+  const { state, dispatch } = useContext(UserContext);
   function setDefaultUser() {
-    setUserid("guest");
+    dispatch({ type: "LOGOUT" });
   }
   return (
     <div>
-      <button onClick={setDefaultUser}>로그아웃</button>
+      <button
+        disabled={state.userid === "guest" ? true : false}
+        onClick={setDefaultUser}
+      >
+        로그아웃
+      </button>
     </div>
   );
 }
