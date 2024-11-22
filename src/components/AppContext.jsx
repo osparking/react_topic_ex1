@@ -1,16 +1,15 @@
-import React, { createContext, useState } from "react";
+import React from "react";
+import UserProvider from "../context/UserProvider";
 import CheckOut from "./CheckOut";
 import Login from "./Login";
-export const userContext = createContext();
 
 export default function AppContext() {
-  const [userid, setUserid] = useState("guest");
   return (
     <div>
-      <userContext.Provider value={{ userid, setUserid }}>
+      <UserProvider>
         <Login />
         <CheckOut />
-      </userContext.Provider>
+      </UserProvider>
     </div>
   );
 }
